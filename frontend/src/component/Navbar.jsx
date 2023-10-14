@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
      <div>
-         <nav class="navbar navbar-expand-lg " style={{backgroundColor:'brown'}}>
+         <nav class="navbar navbar-expand-lg " style={{backgroundColor:'#030324fa'}}>
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="rent.png" alt=""  height={50}/>
@@ -43,6 +43,10 @@ const Navbar = () => {
           <NavLink className="nav-link text-light" to="/browse">
             BrowseRoom
           </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link text-light" to="/veiw">
+            VeiwRoom         </NavLink>
         </li>
         
        

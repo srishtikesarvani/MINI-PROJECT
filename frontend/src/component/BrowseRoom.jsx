@@ -24,7 +24,7 @@ const BrowseRoom = () => {
                     <h3>{browseroom.type}</h3>
                     <h3>{browseroom.rent}</h3>
                     <p>{browseroom.createdat}</p>
-                    {/* <Link to = {} className='btn btn-ptimary mt-3'>View More</Link> */}
+                    <Link to = {'/veiwroom/'+browseroom._id} className='btn btn-ptimary mt-3'>View More</Link>
                 </div>
             </div>
 

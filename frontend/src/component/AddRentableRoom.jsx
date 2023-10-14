@@ -74,7 +74,7 @@ const uploadFile = async (e) => {
     <div className='class1'>
        <div className="col-md-4 d-flex mx-auto align-items-center vh-100 pt-5 ">
         <div className="card w-100 mt-5 shadow bg-light">
-        <h3 className='mt-4 mx-3 heading' style={{fontSize:'22px', fontWeight:700}} >Add Rentable Room Here</h3>
+        <h3 className='mt-4 mx-3 heading' style={{fontSize:'22px', fontWeight:700}} > Add Rentable Room Here</h3>
           <div className="card-body">
           <form onSubmit={rentForm.handleSubmit}>
              <label htmlFor="">Title</label>

@@ -11,6 +11,7 @@ import { AppProvider } from './AppContext';
 import UpdateRoom from './component/UpdateRoom';
 import ManageRoom from './component/ManageRoom';
 import BrowseRoom from './component/BrowseRoom';
+import ViewRoom from './component/ViewRoom';
 
 function App () {
   return (
@@ -26,6 +27,7 @@ function App () {
       <Route path='/update' element={<UpdateRoom />}/>
       <Route path='/manage' element={<ManageRoom/>}/>
       <Route path='/browse' element={<BrowseRoom/>}/>
+      <Route path='/veiw' element={<ViewRoom/>}/>
     </Routes>
     </AppProvider>
     </BrowserRouter>
