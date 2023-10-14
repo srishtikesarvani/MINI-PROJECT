@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 const UpdateRoom = () => {
     const {id} = useParams()
     const fetchroomData = async ()=>{
-        const res = await fetch('http://localhost:5000/room/getbyid'+id)
+        const res = await fetch('http://localhost:5000/room/getbyid/'+id)
         const data = await res.json()
         console.log(data);
     }

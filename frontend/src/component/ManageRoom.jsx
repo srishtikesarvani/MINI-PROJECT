@@ -55,7 +55,7 @@ const ManageRoom = () => {
                   <td>{room.contact}</td>
                   <td>{room.createdat}</td>
                   <td>
-                      <Link to ={'/update/'+room._id} className="btn btn-primary">Edit</Link>
+                      <Link to ={'/updateRoom/'+room._id} className="btn btn-primary">Edit</Link>
                   </td>
                   <td>
                       <button className="btn btn-danger" onClick={()=>{deleteroom(room._id)}}>Delete</button>

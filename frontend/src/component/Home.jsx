@@ -61,7 +61,7 @@ const Home = () => {
 <div class="card text-center mt-5">
  
   
-  <div class="card-body " style={{backgroundColor:'brown' , color:'white'}}>
+  <div class="card-body " style={{backgroundColor:'#030324fa' , color:'white'}}>
     <h2 class="card-title">All Activity</h2>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit similique ad officiis, excepturi soluta.</p>
     <a href="#" class="btn btn-primary " style={{fontSize:'20px'}}>View More</a>
