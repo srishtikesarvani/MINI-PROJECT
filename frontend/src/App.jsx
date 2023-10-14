@@ -24,10 +24,10 @@ function App () {
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/rent' element={<AddRentableRoom/>}/>
-      <Route path='/update' element={<UpdateRoom />}/>
+      <Route path='/updateRoom/:id' element={<UpdateRoom />}/>
       <Route path='/manage' element={<ManageRoom/>}/>
       <Route path='/browse' element={<BrowseRoom/>}/>
-      <Route path='/veiw' element={<ViewRoom/>}/>
+      <Route path='/view' element={<ViewRoom/>}/>
     </Routes>
     </AppProvider>
     </BrowserRouter>
