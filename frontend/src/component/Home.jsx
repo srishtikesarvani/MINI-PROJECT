@@ -7,7 +7,7 @@ const Home = () => {
      <div  id="carouselExample" className="carousel slide ">
   <div className="carousel-inner">
     <div className="carousel-item active slide1">
-      <h2 style={{color:'red', fontWeight:'700', fontSize:50 , marginTop:'200px' }} className='text-center p-5  '> WELCOME TO MY WEBSITE </h2>
+      {/* <h2 style={{color:'red', fontWeight:'700', fontSize:50 , marginTop:'200px' }} className='text-center p-5  '> WELCOME TO MY WEBSITE </h2> */}
       
     </div>
     <div className="carousel-item slide2">
