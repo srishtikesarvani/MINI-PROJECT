@@ -34,7 +34,7 @@ const BrowseRoom = () => {
     }
     return (
 
-        <div className="vh-100">
+        <div className="vh-100 class1" >
             <h1 className='text-center  py-5' style={{ color: '#060666e0' }}>Browse Your Room Here</h1>
             <div className="container">
                 <div className="row">

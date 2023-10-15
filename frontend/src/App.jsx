@@ -27,7 +27,7 @@ function App () {
       <Route path='/updateRoom/:id' element={<UpdateRoom />}/>
       <Route path='/manage' element={<ManageRoom/>}/>
       <Route path='/browse' element={<BrowseRoom/>}/>
-      <Route path='/view' element={<ViewRoom/>}/>
+      <Route path='/view/:id' element={<ViewRoom/>}/>
     </Routes>
     </AppProvider>
     </BrowserRouter>

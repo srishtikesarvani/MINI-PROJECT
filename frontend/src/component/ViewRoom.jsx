@@ -9,7 +9,7 @@ const ViewRoom = () => {
     const res = await fetch('http://localhost:5000/room/getbyid/' + id)
     console.log(res.status);
     const data = await res.json()
-    console.tabel(data);
+    console.table(data);
     setroomData(data)
   }
   useEffect(() => {
@@ -17,8 +17,12 @@ const ViewRoom = () => {
   }, [])
   const displayroom = () => {
     if (roomData !== null) {
-      return (<div className="card">
-        <img className='card-img-top' src={'http://localhost:5000/' + roomData.image} alt="" />
+      return (<div className="card w-100">
+        <div className="row">
+          <div className="col-md-4">
+        <img className='card-img-top' style={{border:'1px solid transparent' , borderRadius:'10px'}} src={'http://localhost:5000/' + roomData.image} alt="" />
+        </div>
+        <div className="col-md-8" >
         <div className="card-body">
           <h2>{roomData.title}</h2>
           <h2>{roomData.type}</h2>
@@ -26,6 +30,8 @@ const ViewRoom = () => {
           <h2>{roomData.email}</h2>
           <h2>{roomData.createdat}</h2>
 
+        </div>
+        </div>
         </div>
       </div>)
     }
