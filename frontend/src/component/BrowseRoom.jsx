@@ -27,8 +27,6 @@ const BrowseRoom = () => {
                         <Link to={'/view/' + browseroom._id} className='btn btn-danger mt-3'>View More</Link>
                     </div>
                 </div>
-
-
             </div>
         })
     }
