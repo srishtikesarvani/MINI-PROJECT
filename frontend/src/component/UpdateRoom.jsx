@@ -26,7 +26,7 @@ const UpdateRoom = () => {
     console.table(values);
     const res = await fetch('http://localhost:5000/room/update/' + roomData._id, {
 
-      method: 'POST',
+      method: 'PUT',
       //stringify is a static method convert javascript value to json string
       body: JSON.stringify(values),
       headers: {
@@ -83,15 +83,15 @@ const UpdateRoom = () => {
                 {(rentForm) => (
                   <form onSubmit={rentForm.handleSubmit}>
                     <label htmlFor="">Title</label>
-                    <input type="text" className='form-control mb-2' id='title' onChange={rentForm.handleChange} values={rentForm.values.title} />
+                    <input type="text" className='form-control mb-2' id='title' onChange={rentForm.handleChange} value={rentForm.values.title} />
                     <label htmlFor="">Type</label>
-                    <input type="text" className='form-control mb-2' id='type' onChange={rentForm.handleChange} values={rentForm.values.type} />
+                    <input type="text" className='form-control mb-2' id='type' onChange={rentForm.handleChange} value={rentForm.values.type} />
                     <label htmlFor="">Rent</label>
-                    <input type="number" className='form-control mb-2' id='rent' onChange={rentForm.handleChange} values={rentForm.values.rent} />
+                    <input type="number" className='form-control mb-2' id='rent' onChange={rentForm.handleChange} value={rentForm.values.rent} />
                     <label htmlFor="">Email</label>
-                    <input type="email" className='form-control mb-2' id='email' onChange={rentForm.handleChange} values={rentForm.values.email} />
+                    <input type="email" className='form-control mb-2' id='email' onChange={rentForm.handleChange} value={rentForm.values.email} />
                     <label htmlFor="">Contact</label>
-                    <input type="Number" className='form-control mb-2' id='contact' onChange={rentForm.handleChange} values={rentForm.values.contact} />
+                    <input type="Number" className='form-control mb-2' id='contact' onChange={rentForm.handleChange} value={rentForm.values.contact} />
                     {/* <label htmlFor="">Image</label>
                  <input type="image"  className='form-control mb-2' id='image'  onChange={rentForm.handleChange} values={rentForm.values.image}/> */}
                     <label htmlFor="">Upload Image</label>

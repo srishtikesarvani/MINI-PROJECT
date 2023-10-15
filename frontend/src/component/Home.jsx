@@ -7,8 +7,11 @@ const Home = () => {
      <div  id="carouselExample" className="carousel slide ">
   <div className="carousel-inner">
     <div className="carousel-item active slide1">
+      {/* <h2 style={{color:'red', fontWeight:'700', fontSize:50 , marginTop:'200px' }} className='text-center p-5  '> WELCOME TO MY WEBSITE </h2> */}
+      
     </div>
     <div className="carousel-item slide2">
+      
     </div>
     <div className="carousel-item slide3">
     </div>
@@ -32,8 +35,8 @@ const Home = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-<div className="container">
-  <h1 className='text-center my-4' style={{fontSize:'50px' , color:'#060666e0'}}>WHY BOOK WITH US </h1>
+<div className="container mt-4">
+  <h1 className='text-center my-5 py-3' style={{fontSize:'50px' , color:'#060666e0'}}> WHY BOOK WITH US </h1>
   <div className="row">
 
     <div className="col-md-3 shadow">

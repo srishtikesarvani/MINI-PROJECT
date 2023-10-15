@@ -25,7 +25,7 @@ const ManageRoom = () => {
     }
   }
     return (
-      <div className="bg-body-secondary">
+      <div className="bg-body-secondary class1">
         <div className="container py-5">
           <h1 className="text-center my-4">ManageRoom</h1>
           <table className="table">
@@ -36,7 +36,7 @@ const ManageRoom = () => {
                 <th>Title</th>
                 <th>Type</th>
                 <th>Rent</th>
-                <th>Email</th>
+                
                 <th>Contact</th>
                 <th>CreatedAt</th>
                
@@ -51,7 +51,7 @@ const ManageRoom = () => {
                   <td>{room.title}</td>
                   <td>{room.type}</td>
                   <td>{room.rent}</td>
-                  <td>{room.email}</td>
+                  
                   <td>{room.contact}</td>
                   <td>{room.createdat}</td>
                   <td>
