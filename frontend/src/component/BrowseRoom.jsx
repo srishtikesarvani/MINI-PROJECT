@@ -18,7 +18,7 @@ const BrowseRoom = () => {
         return browseroom.map((browseroom) => {
             return <div className="col-md-3">
                 <div className="card">
-                    <img className='card-img-top' src={'http://localhost:5000/' + browseroom.image} alt="" />
+                    <img className='card-img' src={'http://localhost:5000/' + browseroom.image} alt="" />
                     <div className="card-body">
                         <p>{browseroom.type}</p>
                         <h4>{browseroom.title}</h4>

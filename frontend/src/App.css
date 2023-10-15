@@ -35,4 +35,11 @@
   height: 80vh;
 }
 
+.item-img{
+  height: 100%;
+}
 
+.card-img{
+  height: 300px;
+  object-fit: cover;
+}
