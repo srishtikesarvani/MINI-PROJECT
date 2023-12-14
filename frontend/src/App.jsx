@@ -12,12 +12,14 @@ import UpdateRoom from './component/UpdateRoom';
 import ManageRoom from './component/ManageRoom';
 import BrowseRoom from './component/BrowseRoom';
 import ViewRoom from './component/ViewRoom';
+import { AnimatePresence } from 'framer-motion';
 
 function App () {
   return (
     <div>
     <BrowserRouter >
     <AppProvider>
+    <AnimatePresence>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -29,6 +31,7 @@ function App () {
       <Route path='/browse' element={<BrowseRoom/>}/>
       <Route path='/view/:id' element={<ViewRoom/>}/>
     </Routes>
+    </AnimatePresence>
     </AppProvider>
     </BrowserRouter>
     </div>

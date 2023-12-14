@@ -2,6 +2,7 @@ import { useFormik } from 'formik'
 import React from 'react'
 import Swal from 'sweetalert2';
 import {useNavigate} from 'react-router-dom';
+import {motion} from 'framer-motion'
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -57,8 +58,12 @@ const Signup = () => {
     }
   return (
     <div className='class1'>
-        <div className="container col-md-3 d-flex mx-auto align-items-center vh-100 pt-5">
-          <div className="card w-100 shadow bg-light">
+        <motion.div
+        initial={{opacity:0, scale:0.2, x:'100%'}}
+        animate={{opacity:1, scale:1, x:0}}
+        transition={{duration:0.5, type:'spring', damping:15, stiffness:100}}
+        className="container col-md-3 d-flex mx-auto align-items-center vh-100 pt-5">
+          <div className="card w-100 shadow " style={{backgroundColor:'#ffffff91'}}>
           <h3 className='mt-4 mx-3 heading' >Please SignUp Here</h3>
             <div className="card-body">
             <form onSubmit={signupForm.handleSubmit}>
@@ -77,7 +82,7 @@ const Signup = () => {
             </form>
             </div>
           </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

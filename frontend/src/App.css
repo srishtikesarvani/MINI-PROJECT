@@ -1,6 +1,6 @@
 .nav-item .active{
   /* border-bottom: 2px solid crimson; */
-  color: rgb(13, 13, 75);
+  color: #ffffff91;
   color: skyblue !important;
   font-weight: bold;
 }
@@ -19,7 +19,7 @@
 .slide1{
   background-size: cover;
   background-position: center;
-  background-image: url('../public/room1.jpeg');
+  background-image: url('../public/room4.webp');
   height: 80vh;
 }
 .slide2{
@@ -42,4 +42,7 @@
 .card-img{
   height: 300px;
   object-fit: cover;
+}
+.card{
+  border: none;
 }

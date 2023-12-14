@@ -1,10 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import UseAppContext from '../AppContext';
 
 const Navbar = () => {
+  const {loggedin , logout} = UseAppContext();
+  const showOption =()=>{
+      if(loggedin){
+        return(
+        <li className='nav-item'>
+<button className='btn btn-danger' onClick={ logout } >Logout</button>
+        </li>
+        )
+      }
+    }
   return (
      <div>
-         <nav class="navbar navbar-expand-lg " style={{backgroundColor:'rgb(13, 13, 75)'}}>
+         <nav class="navbar navbar-expand-lg " style={{backgroundColor:'gray'}}>
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="rent.png" alt=""  height={50}/>
@@ -13,7 +24,7 @@ const Navbar = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-">
       <li className="nav-item">
           <NavLink className="nav-link text-light" aria-current="page" to="/">
             Home
@@ -49,7 +60,7 @@ const Navbar = () => {
             VeiwRoom         </NavLink>
         </li> */}
         
-       
+        {showOption()}
        
       </ul>
      

@@ -2,6 +2,7 @@ import { useFormik } from 'formik'
 import React from 'react'
 import Swal from 'sweetalert2';
 import UseAppContext from '../AppContext';
+import {motion} from 'framer-motion';
 
 
 const Login = () => {
@@ -48,8 +49,12 @@ const Login = () => {
   
   return (
     <div className='class1'>
-      <div className='col-md-4 d-flex mx-auto align-items-center vh-100 '>
-        <div className="card w-100 shadow bg-light">
+      <motion.div 
+      initial={{opacity:0, scale:0.2, x:'100%'}}
+      animate={{opacity:1, scale:1, x:0}}
+      transition={{duration:0.5, type:'spring', damping:15, stiffness:100}}
+      className='col-md-4 d-flex mx-auto align-items-center vh-100 ' >
+        <div className="card w-100 shadow " style={{backgroundColor:'#ffffff91'}}>
         <h3 className='mt-4 mx-3 heading' >Login Form</h3>
           <div className="card-body">
           <form onSubmit={loginForm.handleSubmit}>
@@ -65,7 +70,7 @@ const Login = () => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import { motion} from 'framer-motion';
 
 const ManageRoom = () => {
     const [roomlist, setroomlist] = useState([])
@@ -25,10 +26,14 @@ const ManageRoom = () => {
     }
   }
     return (
-      <div className="bg-body-secondary class1">
+      <motion.div
+      initial={{opacity:0, scale:0.2, x:'100%'}}
+       animate={{opacity:1, scale:1, x:0}}
+       transition={{duration:0.5, type:'spring', damping:15, stiffness:100}}
+      className="bg-body-secondary class1">
         <div className="container py-5">
           <h1 className="text-center my-4">ManageRoom</h1>
-          <table className="table">
+          <table className="table" style={{backgroundColor:'#ffffff91'}}>
             <thead>
               <tr>
                 <th>S. no. </th>
@@ -65,7 +70,7 @@ const ManageRoom = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </motion.div>
     );
 }
 
